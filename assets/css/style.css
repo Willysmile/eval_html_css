@@ -98,6 +98,12 @@ textarea{
   display: flex;
   justify-content: space-around;
   }
+
+  .text-forced{
+    display: flex;
+    align-items: flex-end;
+    
+  }
 /***************** Carte google map ************/
 .map-responsive {
   overflow:hidden;
