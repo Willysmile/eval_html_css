@@ -45,7 +45,8 @@ h2{
   flex-direction: column;
   margin-top: 100px;
   width : 85vw;
-  }
+  
+}
 
 /****************** Mainpage ********************/
 
@@ -64,6 +65,61 @@ h2{
   padding:1rem;
   margin: 1rem 0 1rem 0;
 }
+/***************** Contact Page *****************/
+
+.contact-form, .adress {
+  display:flex;
+  flex-direction: column;
+  border: 2px solid #4EBF85;
+  border-radius: 1rem;
+  padding:1rem;
+  margin: 1rem auto;
+   
+}
+::placeholder {
+    font-size: 0.8rem;
+}
+label {
+  font-size: 0.8rem;
+  padding: 5px;
+}
+#selectRecipient{
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+textarea{
+  margin: 1rem auto;
+  max-width: 70vw;
+  min-width: 60vw;
+}
+
+.formButton{
+  display: flex;
+  justify-content: space-around;
+  }
+/***************** Carte google map ************/
+.map-responsive {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;>
+  height:0;
+  max-width:95vw;
+  display:flex;
+  margin: 1rem auto;
+  border: 2px solid #4EBF85;
+  border-radius: 1rem;
+
+  }
+  
+  .map-responsive iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  } 
+
 
 /*******************  Footer ********************/
 
