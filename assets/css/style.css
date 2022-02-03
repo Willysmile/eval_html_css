@@ -95,7 +95,7 @@ h3{
 }
 /***************** Contact Page *****************/
 
-.contact-form, .adress {
+.contact-form, .adress{
   display:flex;
   flex-direction: column;
   border: 2px solid #4EBF85;
@@ -103,10 +103,10 @@ h3{
   padding:1rem;
   margin: 1rem auto;
 }
-::placeholder {
-    font-size: 0.8rem;
+::placeholder{
+  font-size: 0.8rem;
 }
-label {
+label{
   font-size: 0.8rem;
   padding: 5px;
 }
@@ -116,19 +116,19 @@ label {
 }
 textarea{
   margin: 1rem auto;
-  max-width: 70vw;
-  min-width: 60vw;
+  max-width: 95%;
+  min-width: 90%;
 }
 .formButton{
   display: flex;
   justify-content: space-around;
-  }
-  .text-forced{
-    display: flex;
-    align-items: flex-end;
-  }
+}
+.text-forced{
+  display: flex;
+  align-items: flex-end;
+}
 /***************** Carte google map ************/
-.map-responsive {
+.map-responsive{
   overflow:hidden;
   padding-bottom:56.25%;
   position:relative;>
@@ -138,14 +138,16 @@ textarea{
   margin: 1rem auto;
   border: 2px solid #4EBF85;
   border-radius: 1rem;
-  }
-  .map-responsive iframe {
+}
+.map-responsive iframe{
   left:0;
   top:0;
   height:100%;
   width:100%;
   position:absolute;
-  } 
+  padding: 0.5rem;
+  border-radius: 3rem;
+} 
 
 /*******************  Footer ********************/
 
@@ -160,6 +162,7 @@ footer{
   display: flex;
   margin: 0 auto;
   justify-content: space-around;
+  padding: 1rem 0 0 0;
 }
 .copyright{
   display:flex;
@@ -180,44 +183,110 @@ footer{
 /**************** Media Queries  ****************/
 
 @media screen and (min-width: 992px){
-  body {
-    background-color: red;
-    
-  }
-  .container{
-    max-width: 80vw;
-  }
-  .badge {
-    visibility: hidden;
-  }
-  #historyCollapse, #actionsCollapse {
-    display: block;
-    padding: 2rem;
-    margin: 0;
-  }
+/* body {
+  background-color: red;
+  } */
+.container{
+  max-width: 80vw;
+}
+
+.badge {
+  visibility: hidden; /* Cache les boutons Lire la suite */
+}
+
+/****** Mainpage ******/
+
+#historyCollapse, #actionsCollapse,#zecTourCollapse {
+  display: block;
+  padding: 2rem;
+  margin: 0;
+}
+#zecTourCollapse{
+  padding: 0 2rem 1rem 2rem;
+}
   
-  .history, .actionsCulturelles {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem;
-  }
+.history, .actionsCulturelles{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+/******* Event *******/
+.event-responsive, .event-responsive-2{ 
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.event-responsive-2{
+  align-items: baseline;
+}
+.event-responsive-3{
+  display: block;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.event-responsive-3 .event-text{
+  padding-bottom: 0;
+}
+.event .event-responsive-3 .event-info{
+  margin-top: 3rem;
+}
+.event h2{
+  font-size : 1.5rem;
+}
+.event-text{
+  padding: 2rem;
+}
+.event-img{
+  display: flex;
+  min-width: 50%;
+  margin : 1rem;
+  align-items: center;
+}
+.event-info{
+  display: block;
+  min-width: 80%;
+  max-width: 90%;
+  padding: 0 0 0 3rem;
+}
+.event-block{
+  max-width: 50%;
+  padding: 1rem;
+}
+/**** Contact page *****/
+textarea{
+  max-width: 80%;
+  min-width: 60%;
+}
+.contact-form, .adress{
+  padding:2rem;
+}
+.form-group{
   
-  
+}
+.formButton{
+  max-width: 50%;
+  margin: 0 auto;
+}
+/**** Map responsive ****/
+.map-responsive iframe{
+  padding: 2rem;
 }
 
 @media screen and (min-width: 1200px){
-  body {
-    background-color: green;}
-  .container{
-    max-width: 70vw;
-
+/* body {
+  background-color: green;
+} */
+.container{
+  max-width: 70vw;
 }
 
 @media screen and (min-width: 1400px){
-  body {
-    background-color: blue;}
-  .container{
-    max-width: 60vw;
-
+/* body {
+  background-color: blue;
+} */
+.container{
+  max-width: 50vw;
 }
