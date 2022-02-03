@@ -32,6 +32,9 @@ h3{
 .navbar{
   border-radius: 0 0 0.2rem 0.2rem;
 }
+.nav-size{
+  max-width: 90%;
+}
 .nav-item{
   text-align: center;
 }
@@ -189,12 +192,15 @@ footer{
 .container{
   max-width: 80vw;
 }
-
 .badge {
   visibility: hidden; /* Cache les boutons Lire la suite */
 }
+/******* NavBar ********/
+.nav-size{
+  max-width: 75%;
+}
 
-/****** Mainpage ******/
+/****** Mainpage *******/
 
 #historyCollapse, #actionsCollapse,#zecTourCollapse {
   display: block;
@@ -264,7 +270,8 @@ textarea{
   padding:2rem;
 }
 .form-group{
-  
+  max-width: 50%;
+  margin: 0 auto
 }
 .formButton{
   max-width: 50%;
@@ -276,17 +283,23 @@ textarea{
 }
 
 @media screen and (min-width: 1200px){
-/* body {
-  background-color: green;
-} */
+
 .container{
   max-width: 70vw;
 }
+/******* NavBar ********/
+.nav-size{
+  max-width: 70%;
+}
+}
 
 @media screen and (min-width: 1400px){
-/* body {
-  background-color: blue;
-} */
+
 .container{
-  max-width: 50vw;
+  max-width: 60vw;
+}
+/******* NavBar ********/
+.nav-size{
+  max-width: 55%;
+}
 }
