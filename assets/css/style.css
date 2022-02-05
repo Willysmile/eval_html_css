@@ -57,7 +57,7 @@ h3{
 .container {
   display:flex;
   flex-direction: column;
-  margin-top: 3.5rem;
+  margin-top: 6rem;
   width : 85vw;
 }
 
@@ -192,19 +192,19 @@ footer{
 }
 
 /**************** Media Queries  ****************/
-@media screen and (min-width: 450px){
+/* @media screen and (min-width: 450px){
 
   .container{
     max-width: 90vw;
     margin-top: 4rem;
-  }
+  } */
 
 
 @media screen and (min-width: 992px){
 
 .container{
   max-width: 90vw;
-  margin-top: 80px;
+  margin-top: 7rem;
 }
 .badge {
   visibility: hidden; /* Cache les boutons Lire la suite */
@@ -309,10 +309,9 @@ align-items: center;
 }
 /******* NavBar ********/
 .nav-size{
-  max-width: 85%;
+  max-width: 75%;
 }
 }
-
 @media screen and (min-width: 1400px){
 .container{
   max-width: 80vw;
@@ -320,14 +319,13 @@ align-items: center;
 
 /******* NavBar ********/
 .nav-size{
-  max-width: 80%;
+  max-width: 65%;
 }
 }
 @media screen and (min-width: 1800px){
   .container{
     max-width: 50vw;
   }
-
 /******* NavBar ********/
 .nav-size{
   max-width: 50%;
