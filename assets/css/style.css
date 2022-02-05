@@ -57,7 +57,7 @@ h3{
 .container {
   display:flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 3.5rem;
   width : 85vw;
 }
 
@@ -74,12 +74,7 @@ h3{
 .actionsCulturelles img, .history img{
   border-radius: 10px;
 }
-/* .history{
-  border: 2px solid #4EBF85;
-  border-radius: 1rem;
-  padding:1rem;
-  margin: 1rem 0 1rem 0;
-} */
+
 /***************** Events Page ******************/
 .event{
   display:flex;
@@ -191,13 +186,19 @@ footer{
 }
 
 /**************** Media Queries  ****************/
+@media screen and (min-width: 450px){
+
+  .container{
+    max-width: 90vw;
+    margin-top: 4rem;
+  }
+
 
 @media screen and (min-width: 992px){
-/* body {
-  background-color: red;
-  } */
+
 .container{
   max-width: 90vw;
+  margin-top: 80px;
 }
 .badge {
   visibility: hidden; /* Cache les boutons Lire la suite */
